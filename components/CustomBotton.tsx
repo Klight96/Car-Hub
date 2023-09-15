@@ -19,3 +19,4 @@ const CustomBotton = ({title, containerStyles, handleClick, btnType }: CustomBot
   )
 }
 
+export default CustomBotton
