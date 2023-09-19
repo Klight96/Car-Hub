@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import { CustomBotton } from "."
+import { CustomButton } from "."
 import { Sign } from "crypto"
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
                 />
             </Link>
 
-            <CustomBotton
+            <CustomButton
              title='Sign In'
              btnType='button'
              containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
