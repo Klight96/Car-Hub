@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 
 
 
-const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
+  const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
   <button type='submit' className={`-ml-3 z-10 ${otherClasses}`}>
     <Image
       src={"/magnifying-glass.svg"}
@@ -24,14 +24,14 @@ const SearchBar = () => {
 
   const router = useRouter();
 
-  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+ const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (manufacturer.trim() === "" && model.trim() === "") {
       return alert("Please provide some input");
     }
 
-    updateSearchParams(model.toLowerCase(), manufacturer.toLowerCase());
+    return updateSearchParams(model.toLowerCase(), manufacturer.toLowerCase());
   };
 
   const updateSearchParams = (model: string, manufacturer: string) => {
